@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'create/create_task.dart';
 import 'list/todo_list.dart';
+import 'edit/edit.dart';
 
 void main() {
   // 最初に表示するWidget
@@ -20,6 +21,7 @@ class MyTodoApp extends StatelessWidget {
         routes: {
           '/create_task': (context) => CreateTask(),
           '/todo_list': (context) => TodoLists(),
+          '/edit': (context) => EditTask(),
         });
   }
 }
